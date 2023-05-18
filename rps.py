@@ -133,7 +133,7 @@ model.summary()
 
 model.compile(loss = 'categorical_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
 
-history = model.fit(train_generator, epochs=1, steps_per_epoch=20, 
+history = model.fit(train_generator, epochs=25, steps_per_epoch=20, 
                     validation_data = validation_generator, verbose = 1, validation_steps=3)
 
 model.save("rps.h5")
